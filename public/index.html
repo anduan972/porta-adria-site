@@ -2,23 +2,23 @@
 <html lang="hr">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Porta Adria — boutique agencija za luksuzne nekretnine u Splitu i Dalmaciji. Diskretna prodaja, kupnja, najam i zakup stambenih i poslovnih nekretnina na jadranskoj obali. Licencirani posrednik pri HGK. 20+ godina iskustva.">
+<meta name="description" content="Porta Adria — Boutique real estate agency in Split and Dalmatia. Focused on property sales, rentals, and leasing across the Adriatic coast. Built on 20+ years of experience.">
   <meta property="og:title" content="Porta Adria | Nekretnine Split">
-  <meta property="og:description" content="Boutique agencija za luksuzne nekretnine u Splitu i Dalmaciji. Diskretna prodaja, kupnja, najam i zakup nekretnina na jadranskoj obali. 20+ godina iskustva.">
+  <meta property="og:description" content="Boutique real estate agency in Split and Dalmatia. Focused on property sales, rentals, and leasing across the Adriatic coast. Built on 20+ years of experience.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="hr_HR">
-  <meta property="og:url" content="https://www.portaadria.com/">
-  <meta property="og:image" content="https://www.portaadria.com/og-image.jpg">
+  <meta property="og:url" content="https://porta-adria.lovable.app/site.html">
+  <meta property="og:image" content="https://porta-adria.lovable.app/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <link rel="canonical" href="https://www.portaadria.com/">
-  <link rel="alternate" hreflang="hr" href="https://www.portaadria.com/">
-  <link rel="alternate" hreflang="en" href="https://www.portaadria.com/?lang=en">
-  <link rel="alternate" hreflang="x-default" href="https://www.portaadria.com/">
+  <link rel="canonical" href="https://porta-adria.lovable.app/site.html">
+  <link rel="alternate" hreflang="hr" href="https://porta-adria.lovable.app/site.html">
+  <link rel="alternate" hreflang="en" href="https://porta-adria.lovable.app/site.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://porta-adria.lovable.app/site.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Porta Adria | Nekretnine Split">
-  <meta name="twitter:description" content="Boutique agencija za luksuzne nekretnine u Splitu i Dalmaciji. Diskretna prodaja, kupnja, najam i zakup nekretnina na jadranskoj obali. 20+ godina iskustva.">
-  <meta name="twitter:image" content="https://www.portaadria.com/og-image.jpg">
+  <meta name="twitter:description" content="Boutique real estate agency in Split and Dalmatia. Focused on property sales, rentals, and leasing across the Adriatic coast. Built on 20+ years of experience.">
+  <meta name="twitter:image" content="https://porta-adria.lovable.app/og-image.jpg">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d1b2a'/><rect x='8' y='8' width='84' height='84' fill='none' stroke='%23cbcac8' stroke-width='3'/><text y='62' font-size='52' x='50%' text-anchor='middle' fill='%23cbcac8' font-family='serif' font-weight='400'>PA</text></svg>">
     <meta name="keywords" content="nekretnine Split, agencija za nekretnine, prodaja nekretnina Split, kupnja nekretnina Dalmacija, najam stanova Split, luksuzne nekretnine Hrvatska, Porta Adria, posredovanje nekretninama">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,10 +36,10 @@
   "@type": "RealEstateAgent",
   "name": "Porta Adria",
   "legalName": "Mediatores d.o.o.",
-  "description": "Boutique agencija za luksuzne nekretnine u Splitu i Dalmaciji. Diskretna prodaja, kupnja, najam i zakup nekretnina na jadranskoj obali.",
-  "url": "https://www.portaadria.com",
-  "logo": "https://www.portaadria.com/porta-adria-logo.svg",
-  "image": "https://www.portaadria.com/og-image.jpg",
+  "description": "Boutique agencija za nekretnine u Splitu i Dalmaciji. Diskretna prodaja, kupnja, najam i zakup nekretnina na jadranskoj obali.",
+  "url": "https://porta-adria.lovable.app/site.html",
+  "logo": "https://porta-adria.lovable.app/porta-adria-logo.svg",
+  "image": "https://porta-adria.lovable.app/og-image.jpg",
   "telephone": "+385 98 716 674",
   "email": "info@portaadria.com",
   "address": {
@@ -84,6 +84,13 @@
     overflow: hidden;
     background: var(--navy);
     font-family: 'Raleway', sans-serif;
+  }
+  body {
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+  body.ready {
+    opacity: 1;
   }
   
   body.scrollable {
@@ -202,24 +209,26 @@
     font-weight: 400;
     font-size: 1rem;
     letter-spacing: 0.2em;
-    color: rgba(203,202,200,0.5);
+    color: rgba(203,202,200,0.85);
     cursor: pointer;
     transition: color 0.2s ease;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 4px 10px rgba(0,0,0,0.6), 0 8px 20px rgba(0,0,0,0.3);
     padding: 0.5rem 0.5rem;
   }
   #lang-switch span.active {
     color: #cbcac8;
     font-weight: 600;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 4px 10px rgba(0,0,0,0.6), 0 8px 20px rgba(0,0,0,0.3);
   }
-  #lang-switch span:hover { color: rgba(203,202,200,0.85); }
+  #lang-switch span:hover { color: #ffffff; }
   #lang-switch .lang-sep {
-    color: rgba(203,202,200,0.35);
+    color: rgba(203,202,200,0.6);
     cursor: default;
     font-size: 0.8rem;
     padding: 0.6rem 0;
   }
+
+  
 
 
 
@@ -347,10 +356,10 @@
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 70% 50% at 50% 50%,
-      rgba(10, 20, 35, 0.72) 0%,
-      rgba(10, 20, 35, 0.35) 60%,
-      rgba(10, 20, 35, 0.15) 100%);
-    transition: background var(--transition);
+      rgba(10, 20, 35, 0.45) 0%,
+      rgba(10, 20, 35, 0.25) 60%,
+      rgba(10, 20, 35, 0.10) 100%);
+    transition: background 0.8s ease;
   }
 
   .panel + .panel::before {
@@ -447,7 +456,7 @@
     color: #cbcac8;
     line-height: 1.1;
     word-break: break-word;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.9), 0 4px 10px rgba(0,0,0,0.6), 0 8px 20px rgba(0,0,0,0.3);
     transition: transform 0.5s 0.15s ease, letter-spacing 0.3s ease;
   }
 
@@ -460,7 +469,22 @@
 
 
   .panel:not(.open):hover .panel-title {
-    letter-spacing: 0.12em;
+    text-shadow: 0 6px 8px rgba(0,0,0,0.95), 0 12px 20px rgba(0,0,0,0.7), 0 20px 40px rgba(0,0,0,0.4);
+    letter-spacing: 0.2em;
+    transition: transform 0.5s 0.15s ease, letter-spacing 0.4s ease;
+  }
+
+  #panels:not(.has-open) .panel:hover .panel-bg::after {
+    background: radial-gradient(ellipse 70% 50% at 50% 50%,
+      rgba(13,27,42,0.55) 0%,
+      rgba(13,27,42,0.35) 60%,
+      rgba(13,27,42,0.2) 100%);
+    transition: background 0.4s ease;
+  }
+
+  #panels:not(.has-open):has(.panel:hover) .panel:not(:hover) .panel-bg {
+    filter: brightness(1);
+    transition: filter 0.4s ease;
   }
 
   .panel-sub {
@@ -559,10 +583,7 @@
     padding: 0.6rem 2rem;
   }
 
-  #panels:not(.has-open) .panel:hover .panel-bg {
-    filter: brightness(1.25);
-    transition: filter 0.4s ease;
-  }
+  
 
 
 
@@ -1300,15 +1321,6 @@
     color: #ef4444;
   }
 
-  /* ── PRELOADER ── */
-  #preloader {
-    position:fixed;inset:0;z-index:99999;background:#0a0a0a;
-    display:flex;align-items:center;justify-content:center;
-    transition:opacity .6s ease;
-  }
-  #preloader.hidden{opacity:0;pointer-events:none;}
-  #preloader .preloader-logo{width:90px;height:90px;animation:ppulse 1.5s ease-in-out infinite;}
-  @keyframes ppulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.15);opacity:1}}
 
   /* ── SCROLL PROGRESS ── */
   #scroll-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,#b0b8be,#d4d8da);z-index:10000;width:0;display:none;transition:width .15s linear;}
@@ -1375,12 +1387,25 @@
     #scroll-progress { transition: none; }
   }
 
+  /* ── LANG-SWITCH DESKTOP OVERRIDE ── */
+  @media (min-width: 1024px) {
+    #lang-switch span {
+      font-size: 1.3rem !important;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.95), 0 6px 14px rgba(0,0,0,0.8), 0 12px 28px rgba(0,0,0,0.5) !important;
+    }
+    #lang-switch span.active {
+      text-shadow: 0 3px 6px rgba(0,0,0,0.95), 0 6px 14px rgba(0,0,0,0.8), 0 12px 28px rgba(0,0,0,0.5) !important;
+    }
+    #lang-switch .lang-sep {
+      font-size: 1.05rem !important;
+    }
+  }
 </style>
 </head>
 <body>
 <noscript><div class="noscript-msg"><p>Za puni doživljaj stranice Porta Adria potreban je uključen JavaScript.<br>Molimo omogućite JavaScript u postavkama preglednika.</p></div></noscript>
 <a href="#main-content" class="skip-to-content">Preskoči na sadržaj</a>
-<div id="preloader"><img src="porta-adria-logo.svg" class="preloader-logo" alt="" onerror="this.parentElement.classList.add('hidden');this.parentElement.style.display='none'"></div>
+
 <div id="scroll-progress" aria-hidden="true"></div>
 
 <header>
@@ -1620,7 +1645,7 @@
         </div>
         <div class="form-consent">
           <input type="checkbox" id="suglasnost" name="suglasnost" required>
-          <label for="suglasnost" data-i18n="consent-text" data-i18n-mode="prefix">Suglasan/suglasna sam da me Porta Adria (Mediatores d.o.o.) kontaktira putem poziva, e-maila ili poruke u svrhu posredovanja u prometu nekretninama. Kontaktiranje možete obustaviti u svakom trenutku slanjem zahtjeva na <a href="mailto:info@portaadria.com">info@portaadria.com</a>.</label>
+          <label for="suglasnost" data-i18n="consent-text" data-i18n-mode="prefix">Suglasan/suglasna sam da me Porta Adria (Mediatores d.o.o.) kontaktira putem poziva, e-maila ili poruke u svrhu posredovanja u prometu nekretninama. Kontaktiranje možete obustaviti u svakom trenutku slanjem zahtjeva na <a href="/cdn-cgi/l/email-protection#d0b9beb6bf90a0bfa2a4b1b1b4a2b9b1feb3bfbd"><span class="__cf_email__" data-cfemail="d1b8bfb7be91a1bea3a5b0b0b5a3b8b0ffb2bebc">[email&#160;protected]</span></a>.</label>
         </div>
         <button type="submit" class="form-submit" aria-label="Pošaljite upit" data-i18n="btn-submit">Pošaljite upit</button>
         <div id="form-status" aria-live="polite" role="status" class="form-status"></div>
@@ -1644,7 +1669,7 @@
           </div>
           <div class="contact-info-item">
             <span data-i18n="ci-email">Email</span>
-            <span><a href="mailto:info@portaadria.com" class="section-link">info@portaadria.com</a></span>
+            <span><a href="/cdn-cgi/l/email-protection#caa3a4aca58abaa5b8beababaeb8a3abe4a9a5a7" class="section-link"><span class="__cf_email__" data-cfemail="274e4941486757485553464643554e460944484a">[email&#160;protected]</span></a></span>
           </div>
           <div class="contact-info-item">
             <span data-i18n="ci-telefon">Telefon</span>
@@ -1678,7 +1703,7 @@
 <p class="modal-date">Zadnja izmjena: travanj 2026.</p>
 
 <h3>1. Voditelj obrade</h3>
-<p>Mediatores d.o.o. (Porta Adria), Ulica Ivana Gundulića 26A, 21000 Split, OIB: 20196172276. Kontakt: info@portaadria.com · +385 (0)98 716 674.</p>
+<p>Mediatores d.o.o. (Porta Adria), Ulica Ivana Gundulića 26A, 21000 Split, OIB: 20196172276. Kontakt: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb92959d94bb8b94898f9a9a9f89929ad5989496">[email&#160;protected]</a> · +385 (0)98 716 674.</p>
 
 <h3>2. Koje podatke prikupljamo i na koji način</h3>
 <p>Prikupljamo isključivo podatke koje nam Vi izravno dostavite putem kontaktnog obrasca ili neposrednom komunikacijom: ime i prezime, e-mail adresu, broj telefona te opis vašeg upita ili nekretnine. Naša web stranica ne koristi analitičke alate niti reklamne mreže koje bi prikupljale podatke o vašem pregledavanju.</p>
@@ -1696,7 +1721,7 @@
 <p>Stranica ne postavlja analitičke ni reklamne kolačiće. Jedini tehnički elementi treće strane su Google Fonts (učitavanje fontova pisma s Googleova CDN-a) i Formspree (obrada kontaktnog obrasca), koji funkcioniraju u skladu s vlastitim politikama privatnosti.</p>
 
 <h3>7. Vaša prava</h3>
-<p>Sukladno GDPR-u imate pravo na: pristup svojim podacima, ispravak netočnih podataka, brisanje podataka ("pravo na zaborav"), ograničenje obrade, prenosivost podataka te pravo prigovora na obradu. Zahtjeve upućujte pisanim putem na info@portaadria.com. Imate i pravo podnijeti pritužbu Agenciji za zaštitu osobnih podataka Republike Hrvatske (azop.hr).</p>
+<p>Sukladno GDPR-u imate pravo na: pristup svojim podacima, ispravak netočnih podataka, brisanje podataka ("pravo na zaborav"), ograničenje obrade, prenosivost podataka te pravo prigovora na obradu. Zahtjeve upućujte pisanim putem na <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6cfc8c0c9e6d6c9d4d2c7c7c2d4cfc788c5c9cb">[email&#160;protected]</a>. Imate i pravo podnijeti pritužbu Agenciji za zaštitu osobnih podataka Republike Hrvatske (azop.hr).</p>
 
     </div>
   </div>
@@ -1786,7 +1811,7 @@
 <!-- Plutajući contact gumbi -->
 <div class="contact-fab">
   <!-- Email -->
-  <a href="mailto:info@portaadria.com" title="Pošalji email" data-i18n-title="fab-email">
+  <a href="/cdn-cgi/l/email-protection#3b52555d547b4b54494f5a5a5f49525a15585456" title="Pošalji email" data-i18n-title="fab-email">
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="2" y="4" width="20" height="16" rx="2" stroke="#d4d8da" stroke-width="1.7" fill="none"/>
       <path d="M2 7l10 7 10-7" stroke="#d4d8da" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1803,7 +1828,7 @@
 
 <div id="back-toast" data-i18n="back-toast">Pritisnite natrag još jednom za izlaz</div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // ── Pravni modali ─────────────────────────────────
   function openModal(id) {
     document.getElementById('modal-' + id).classList.add('active');
@@ -1913,8 +1938,8 @@
     }
   }
   window.addEventListener('load', function() {
-    // Wait for preloader to finish, then restore hash
-    setTimeout(openPanelFromHash, 1300);
+    document.body.classList.add('ready');
+    openPanelFromHash();
   });
 
   function closeAll() {
@@ -1961,8 +1986,9 @@
       panels.forEach(function(bg, i) {
         setTimeout(function() {
           if (document.querySelector('#panels.has-open')) return;
+          // Panel koji pulsa dobije navy filter
           bg.style.transition = 'filter 0.6s ease';
-          bg.style.filter = 'brightness(1.3)';
+          bg.style.filter = 'brightness(0.65)';
           setTimeout(function() { bg.style.filter = 'brightness(1)'; }, 600);
         }, i * 800);
       });
@@ -2291,11 +2317,6 @@
 
 
 
-  // ── PRELOADER ──
-  function hidePreloader(){var p=document.getElementById('preloader');if(p&&!p._h){p._h=true;setTimeout(function(){p.classList.add('hidden')},600);setTimeout(function(){p.style.display='none'},1200);}}
-  window.addEventListener('load',hidePreloader);
-  setTimeout(hidePreloader,3000);
-
   // ── SCROLL PROGRESS ──
   var progressBar=document.getElementById('scroll-progress');
   window.addEventListener('scroll',function(){
@@ -2318,19 +2339,15 @@
   function initRevealForSection(section){
     var sectionRevealEls=section.querySelectorAll('.section-eyebrow,.section-title,.section-divider,.section-text p,.section-note,.owner-signature,.section-photo,.card,.service-item,.cta-block,.contact-grid');
     if(activeRevealObserver) activeRevealObserver.disconnect();
-    sectionRevealEls.forEach(function(el){
-      el.classList.add('reveal');
-      el.classList.remove('visible');
-    });
-    activeRevealObserver=new IntersectionObserver(function(entries){
+    activeRevealObserver = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-          activeRevealObserver.unobserve(entry.target);
-        }
+        if(entry.isIntersecting){ entry.target.classList.add('visible'); }
       });
-    },{root:null,threshold:0.12,rootMargin:'0px 0px -12% 0px'});
-    sectionRevealEls.forEach(function(el){activeRevealObserver.observe(el);});
+    }, { threshold: 0.15 });
+    sectionRevealEls.forEach(function(el){
+      el.classList.remove('visible');
+      activeRevealObserver.observe(el);
+    });
   }
 
 </script>
