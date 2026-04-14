@@ -1,0 +1,41 @@
+# Porta Adria — .htaccess
+# Redirecti starih WordPress URL-ova na novu stranicu
+
+# Nekretnine kategorije → Prodaja & Kupnja sekcija
+Redirect 301 /nekretnine/ https://portaadria.com/#sec-prodaja
+Redirect 301 /nekretnine/ville/ https://portaadria.com/#sec-prodaja
+Redirect 301 /nekretnine/zemljista/ https://portaadria.com/#sec-prodaja
+Redirect 301 /nekretnine/kuce/ https://portaadria.com/#sec-prodaja
+Redirect 301 /nekretnine/stanovi/ https://portaadria.com/#sec-prodaja
+Redirect 301 /nekretnine/apartmani/ https://portaadria.com/#sec-prodaja
+Redirect 301 /nekretnine/poslovni-prostori/ https://portaadria.com/#sec-prodaja
+Redirect 301 /portfolio-category/zemljista/ https://portaadria.com/#sec-prodaja
+Redirect 301 /portfolio-category/apartmani/ https://portaadria.com/#sec-prodaja
+
+# Usluge → odgovarajuće sekcije
+Redirect 301 /usluge-2/ https://portaadria.com/#sec-ostale-usluge
+Redirect 301 /usluge-2/najam/ https://portaadria.com/#sec-najam
+Redirect 301 /usluge-2/zakup/ https://portaadria.com/#sec-najam
+Redirect 301 /usluge-2/prodaja/ https://portaadria.com/#sec-prodaja
+Redirect 301 /usluge-2/kupnja/ https://portaadria.com/#sec-prodaja
+Redirect 301 /usluge-2/dodatne-usluge/ https://portaadria.com/#sec-ostale-usluge
+
+# Kontakt → Kontakt sekcija
+Redirect 301 /kontakt/ https://portaadria.com/#sec-kontakt
+Redirect 301 /gmap/ https://portaadria.com/#sec-kontakt
+
+# O nama → O nama sekcija
+Redirect 301 /o-nama/ https://portaadria.com/#sec-o-nama
+
+# Pravni dokumenti → početna (modalni prozori)
+Redirect 301 /uvjeti-koristenja/ https://portaadria.com/
+Redirect 301 /uvjeti-poslovanja/ https://portaadria.com/
+Redirect 301 /izjava-o-privatnosti/ https://portaadria.com/
+
+# Ostale stare stranice → početna
+Redirect 301 /blog/ https://portaadria.com/
+Redirect 301 /partners/ https://portaadria.com/
+Redirect 301 /works/ https://portaadria.com/
+
+# Svi ostali nepostojeći URL-ovi → početna stranica
+ErrorDocument 404 https://portaadria.com
